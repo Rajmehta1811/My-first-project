@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Arstroxx.com</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        body,
+        html {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .heading {
+            background-color: white;
+            height: 150px;
+        }
+        
+        .heading img {
+            margin-left: 200px;
+            margin-top: 50px;
+        }
+        /*navigation bar*/
+        
+        nav {
+            background: linear-gradient(to right, #833ab4, #ec1b1b, #fcb045);
+            max-width: 100%;
+            padding: 10px;
+            position: relative;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 20px;
+            padding: 20px;
+            transition: all 0.5s ease-in-out;
+        }
+        
+        .home {
+            margin-left: 300px;
+        }
+        
+        nav a:hover {
+            color: yellow;
+        }
+        /*socialmedia*/
+        
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .social .line {
+            position: absolute;
+            top: 0;
+            left: 0px;
+            width: 100%;
+            height: 3px;
+            background: white;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+            z-index: 0;
+        }
+        
+        .social ul {
+            position: absolute;
+            left: 100%;
+            margin-left: -216px;
+            list-style: none;
+            color: #000;
+        }
+        
+        .social ul li {
+            float: left;
+        }
+        
+        .social ul li a {
+            position: relative;
+            float: left;
+            width: 48px;
+            height: 48px;
+            text-align: center;
+            color: #000;
+            padding: 0 0 30px 0;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            text-decoration: none;
+            transition: all 0.5s ease-in;
+        }
+        
+        .social ul li a:hover {
+            color: #fff;
+        }
+        
+        .fa-whatsapp,
+        .fa-facebook,
+        .fa-instagram,
+        .fa-pinterest {
+            padding: 10px 0 0 0;
+        }
+        
+        .social ul li a:after {
+            content: "";
+            position: absolute;
+            bottom: 0px;
+            left: 0;
+            width: 1px;
+            height: 1px;
+            border: 24px solid transparent;
+            border-bottom: 24px solid white;
+            z-index: 0;
+        }
+        
+        .social ul li.whatsapp a:hover {
+            background: #4FCE5D;
+        }
+        
+        .social ul li.facebook a:hover {
+            background: #3b5998;
+        }
+        
+        .social ul li.instagram a:hover {
+            background: orange;
+        }
+        
+        .social ul li.pinterest a:hover {
+            background: #c3042b;
+        }
+        /*dropdown menu*/
+        /* The dropdown container */
+        
+        .dropdown {
+            overflow: hidden;
+            display: inline-block;
+        }
+        /* Dropdown button */
+        
+        .dropdown .dropbtn {
+            border: none;
+            outline: none;
+            color: white;
+            background-color: inherit;
+            font-family: inherit;
+        }
+        
+        .dropdown:hover .dropbtn {
+            background-color: transparent;
+        }
+        /* Dropdown content
+    (hidden by default) */
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        /* Links inside the dropdown */
+        
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        /* Add a grey background color to dropdown links on hover */
+        
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+        /* Show the dropdown menu on hover
+    */
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        /* Style the links inside the sidenav */
+        
+        #mySidenav a {
+            position: fixed;
+            /* Position them relative to the browser window */
+            right: -80px;
+            /* Position them outside of the screen */
+            transition: 0.3s;
+            /* Add transition on hover */
+            padding: 15px;
+            /* 15px padding */
+            width: 100px;
+            /* Set a specific width */
+            text-decoration: none;
+            /* Remove underline */
+            font-size: 8px;
+            /* Increase font size */
+            color: white;
+            /* White text color */
+            border-radius: 50px 0 0 50px;
+            /* Rounded corners on the top right and bottom right side */
+        }
+        
+        #mySidenav a:hover {
+            right: 0;
+            /* On mouse-over, make the elements appear as they should */
+        }
+        /* The about link: 20px from the top with a green background */
+        
+        #contact {
+            bottom: 60px;
+            background: linear-gradient(to right, #833ab4, #ec1b1b, #fcb045);
+        }
+        
+        .h1 {
+            text-align: center;
+            font-size: 40px;
+            color: black;
+            background-color: white;
+            padding: 75px;
+            animation-name: anime;
+            animation-duration: 14s;
+            animation-iteration-count: infinite;
+        }
+        
+        @keyframes anime {
+            0% {
+                color: red;
+            }
+            15% {
+                color: orange;
+            }
+            30% {
+                color: yellow;
+            }
+            45% {
+                color: green;
+            }
+            60% {
+                color: blue;
+            }
+            75% {
+                color: indigo;
+            }
+            90% {
+                color: purple;
+            }
+        }
+        
+        footer {
+            margin-top: 75px;
+            bottom: 0px;
+            width: auto;
+            font-size: 12px;
+            text-align: center;
+            letter-spacing: .2em;
+            background: linear-gradient(to right, #833ab4, #ec1b1b, #fcb045);
+            color: white;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="social">
+        <span class="line"></span>
+        <ul>
+            <li class="whatsapp">
+                <a href="https://api.whatsapp.com/send?phone=+919725367627" target="_blank">
+                    <i class="fa fa-whatsapp fa-2x"></i>
+                </a>
+            </li>
+
+            <li class="facebook">
+                <a href="https://www.facebook.com/artstroxx_-107857577270366" target="_blank">
+                    <i class="fa fa-facebook fa-2x"></i>
+                </a>
+            </li>
+            <li class="instagram">
+                <a href="http://www.instagram.com/artstroxx_" target="_blank">
+                    <i class="fa fa-instagram fa-2x"></i>
+                </a>
+            </li>
+            <li class="pinterest">
+                <a href="https://in.pinterest.com/Artstroxx_/boards/" target="_blank">
+                    <i class="fa fa-pinterest fa-2x"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="heading">
+        <img src="https://i.ibb.co/1M9yRLd/logo5.png" alt="logo" border="0">
+    </div>
+    <div>
+        <nav>
+            <div class="dropdown">
+                <button class="dropbtn"><a class="home" href=" index.html ">Home</a></button>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn"> <a href="learn.html">Learn</a></button>
+                <div class="dropdown-content">
+                    <a href="learn.html #classes">Drawing class</a><br>
+                    <a href="learn.html #beginner">Courses for beginners</a><br>
+                    <a href="learn.html #improver">Courses for improvers</a><br>
+                    <a href="learn.html #other">Calligraphy</a><br>
+                    <a href="learn.html #other">Canvas painting</a><br>
+                    <a href="learn.html #other">Glass painting</a><br>
+                    <a href="learn.html #other">Potrait making </a><br>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn"> <a href="artgallery.html">Art Gallery</a></button>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn"> <a href="artmall.html">Art Mall</a></button>
+            </div>
+
+
+            <div class="dropdown">
+                <button class="dropbtn"><a href="contact us.html">Contact Us</a></button>
+            </div>
+        </nav>
+    </div>
+    <div>
+        <h1 class="h1"><img src="left.png" width="50px" height="20px">Sorry - page under devlopment..<img src="right.png" width="50px" height="20px">
+        </h1>
+
+    </div>
+
+
+
+
+    <footer>
+        <p>
+
+            Copyright &copy;
+            <script>
+                document.write(new Date().getFullYear());
+            </script> All rights reserved by Artstroxx</p>
+    </footer>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="tel:+91 9725367627" id="contact"><i class="fa fa-phone fa-2x"> -click to call</i></a>
+    </div>
+</body>
+
+</html>

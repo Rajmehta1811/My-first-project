@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Arstroxx.com</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2.0.11/dist/flickity.min.css">
+
+</head>
+
+<body>
+
+    <div class="social">
+        <span class="line"></span>
+        <ul>
+            <li class="whatsapp">
+                <a href="https://api.whatsapp.com/send?phone=+919725367627" target="_blank">
+                    <i class="fa fa-whatsapp fa-2x"></i>
+                </a>
+            </li>
+
+            <li class="facebook">
+                <a href="https://www.facebook.com/artstroxx_-107857577270366" target="_blank">
+                    <i class="fa fa-facebook fa-2x"></i>
+                </a>
+            </li>
+            <li class="instagram">
+                <a href="http://www.instagram.com/artstroxx_" target="_blank">
+                    <i class="fa fa-instagram fa-2x"></i>
+                </a>
+            </li>
+            <li class="pinterest">
+                <a href="https://in.pinterest.com/Artstroxx_/boards/" target="_blank">
+                    <i class="fa fa-pinterest fa-2x"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="heading">
+        <img src="https://i.ibb.co/1M9yRLd/logo5.png" alt="logo" border="0">
+    </div>
+    <div>
+        <nav>
+            <div class="dropdown">
+                <button class="dropbtn"><a class="home" href=" index.html ">Home</a></button>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn"> <a href="learn.html">Learn</a></button>
+                <div class="dropdown-content">
+                    <a href="learn.html #classes">Drawing class</a><br>
+                    <a href="learn.html #beginner">Courses for beginners</a><br>
+                    <a href="learn.html #improver">Courses for improvers</a><br>
+                    <a href="learn.html #other">Calligraphy</a><br>
+                    <a href="learn.html #other">Canvas painting</a><br>
+                    <a href="learn.html #other">Glass painting</a><br>
+                    <a href="learn.html #other">Potrait making </a><br>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn"> <a href="artgallery.html">Art Gallery</a></button>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn"> <a href="artmall.html">Art Mall</a></button>
+            </div>
+
+
+            <div class="dropdown">
+                <button class="dropbtn"><a href="contact us.html">Contact Us</a></button>
+            </div>
+        </nav>
+    </div>
+
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <div class="content">
+                <h1>WELCOME TO THE WORLD ART</h1><br/>
+                <p>Start exploring ART you love</p>
+            </div>
+            <img src="slide.jpg" width="100%" height="600px">
+
+        </div>
+        <div class="mySlides fade">
+            <div class="content">
+                <h1>LEARN</h1><br/>
+                <p>Learn different type of ART by experts</p>
+            </div>
+            <img src="slide1.jpg" width="100%" height="600px">
+
+        </div>
+        <div class="mySlides fade">
+            <div class="content">
+                <h1>GALLERY</h1><br/>
+                <p>Discover, give your reviews and purchase ART by emerging artists</p>
+            </div>
+            <img src="slide2.jpg" width="100%" height="600px">
+
+        </div>
+    </div>
+    <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 5000); // Change image every 5 seconds
+        }
+    </script>
+    <div class="divider">
+
+        <div class="container">
+            <div class="divider-wrapper divider-one">
+                <h2>Drawing Classes</h2><br/>
+                <p>For kids and students<br/>(all standard)<br/>school syllabus</p>
+                <a href="learn.html #classes" class="more">Learn More</a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="divider-wrapper divider-two">
+                <h2>Courses for Beginners</h2><br/>
+                <p>For everyone <br>who are interested<br> in drawing/painting. <br>basic learning</p>
+                <a href="learn.html #beginner" class="more">Learn More</a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="divider-wrapper divider-three">
+                <h2>Courses for Improvers</h2><br/>
+                <p>Improvment is stair to success-<br/>good-better-best<br>Level up your skill</p>
+                <a href="learn.html #improver" class="more">Learn More</a>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="divider-wrapper divider-four">
+                <h2>Other<br/> courses</h2><br/>
+                <p>Learn calligraphy,glass painting,<br/>potrait making etc..</p>
+                <a href="learn.html #other" class="more">Learn More</a>
+            </div>
+        </div>
+
+    </div>
+    <div>
+        <h1 class="h1"><img src="left.png" width="50px" height="20px"> Learning Courses <img src="right.png" width="50px" height="20px">
+        </h1>
+    </div>
+    <center>
+        <img src="1.jpg"></center>
+    <div>
+        <h1 class="h1"><img src="left.png" width="50px" height="20px"> Featured Art work <img src="right.png" width="50px" height="20px">
+        </h1>
+    </div>
+    <div class="potrait">
+        <div class="img-container">
+            <a href="potrait.jpg"><img class="imgpot" src="potrait.jpg" width="200px" height="300px"></a>
+            <a href="potrait8.jpg"><img class="imgpot" src="potrait8.jpg" width="200px" height="300px"></a>
+            <a href="potrait2.jpg"><img class="imgpot" src="potrait2.jpg" width="200px" height="300px"></a>
+            <a href="potrait3.jpg"><img class="imgpot" src="potrait3.jpg" width="200px" height="300px"></a>
+        </div>
+
+    </div>
+    <div class="viewart">
+        <a href="artgallery.html #potrait" class="more">View More</a>
+        <center>
+            <h1 class="typeheading">Potrait Sketches</h1>
+        </center>
+    </div>
+    <div class="viewartright">
+        <a href="artgallery.html" class="more">View More</a>
+        <center>
+            <h1 class="typeheading">Random Pencil Sketches</h1>
+        </center>
+    </div>
+    <div class="pencil">
+        <div class="img-container">
+            <a href="10.jpg"><img class="imgpot" src="10.jpg" width="200px" height="300px"></a>
+            <a href="9.jpg"><img class="imgpot" src="9.jpg" width="200px" height="300px"></a>
+            <a href="18.jpg"><img class="imgpot" src="18.jpg" width="200px" height="300px"></a>
+            <a href="11.jpg"><img class="imgpot" src="11.jpg" width="200px" height="300px"></a>
+        </div>
+    </div>
+    <div class="canvas">
+        <div class="img-container">
+            <a href="canvas.jpg"><img class="imgpot" src="canvas.jpg" width="200px" height="300px"></a>
+            <a href="canvas1.jpg"><img class="imgpot" src="canvas1.jpg" width="200px" height="300px"></a>
+            <a href="canvas4.jpg"><img class="imgpot" src="canvas4.jpg" width="200px" height="300px"></a>
+            <a href="canvas3.jpg"><img class="imgpot" src="canvas3.jpg" width="200px" height="300px"></a>
+        </div>
+
+    </div>
+    <div class="viewart">
+        <a href="artgallery.html #canva" class="more">View More</a>
+        <center>
+            <h1 class="typeheading">Canvas Painting</h1>
+        </center>
+    </div>
+    <div class="viewartright">
+        <a href="artgallery.html" class="more">View More</a>
+        <center>
+            <h1 class="typeheading">Abstract Painting</h1>
+        </center>
+    </div>
+    <div class="abstract">
+        <div class="img-container">
+            <a href="abstract.jpg"><img class="imgpot" src="abstract.jpg" width="200px" height="300px"></a>
+            <a href="abstract1.jpg"><img class="imgpot" src="abstract1.jpg" width="200px" height="300px"></a>
+            <a href="abstract2.jpg"><img class="imgpot" src="abstract2.jpg" width="200px" height="300px"></a>
+            <a href="abstract3.jpg"><img class="imgpot" src="abstract3.jpg" width="200px" height="300px"></a>
+        </div>
+    </div>
+    <div>
+        <h1 class="h1"><img src="left.png" width="50px" height="20px"> Art Mall <img src="right.png" width="50px" height="20px">
+        </h1>
+    </div>
+    <div class="carousel-wrapper">
+        <div class="carousel" data-flickity='{ "autoPlay": true }'>
+            <div class="carousel-cell">
+                <h3><b>Potrait Sketch</b></h3><br>
+                <h3>Carry Minati</h3>
+                <center><img src="potrait1.jpg"></center>
+                <center><a href="basic.html" class="buy"><i class="fa fa-shopping-cart"></i> Buy Now</a></center>
+                <div class="line"></div>
+                <div class="price">
+                    <span>899<sup>₹</sup></span>
+                </div>
+            </div>
+            <div class="carousel-cell">
+                <h3><b>Potrait Sketch</b></h3><br>
+                <h3>Rashmika Mandanna</h3>
+                <center><img src="potrait4.jpg"></center>
+                <center><a href="basic.html" class="buy"><i class="fa fa-shopping-cart"></i> Buy Now</a></center>
+                <div class="line"></div>
+                <div class="price">
+                    <span>899<sup>₹</sup></span>
+                </div>
+            </div>
+            <div class="carousel-cell">
+                <h3><b>Potrait Sketch</b></h3><br>
+                <h3>Lionel Messi</h3>
+                <center><img src="potrait5.jpg"></center>
+                <center><a href="basic.html" class="buy"><i class="fa fa-shopping-cart"></i> Buy Now</a></center>
+                <div class="line"></div>
+                <div class="price">
+                    <span>899<sup>₹</sup></span>
+                </div>
+            </div>
+            <div class="carousel-cell">
+                <h3><b>Pencil Sketch</b></h3><br>
+                <h3>Pain cry</h3>
+                <center><img src="23.jpg"></center>
+                <center><a href="basic.html" class="buy"><i class="fa fa-shopping-cart"></i> Buy Now</a></center>
+                <div class="line"></div>
+                <div class="price">
+                    <span>449<sup>₹</sup></span>
+                </div>
+            </div>
+            <div class="carousel-cell">
+                <h3><b>Pencil Sketch</b></h3><br>
+                <h3>Blind eyes</h3>
+                <center><img src="20.jpg"></center>
+                <center><a href="basic.html" class="buy"><i class="fa fa-shopping-cart"></i> Buy Now</a></center>
+                <div class="line"></div>
+                <div class="price">
+                    <span>449<sup>₹</sup></span>
+                </div>
+            </div>
+            <div class="carousel-cell">
+                <h3><b>Pencil Sketch</b></h3><br>
+                <h3>Joker-Why so serious?</h3>
+                <center><img src="9.jpg"></center>
+                <center><a href="basic.html" class="buy"><i class="fa fa-shopping-cart"></i> Buy Now</a></center>
+                <div class="line"></div>
+                <div class="price">
+                    <span>449<sup>₹</sup></span>
+                </div>
+            </div>
+            <div class="carousel-cell">
+                <h3><b>Canvas Painting</b></h3><br>
+                <h3>Scenery-wall art</h3>
+                <center><img src="canvas.jpg"></center>
+                <center><a href="basic.html" class="buy"><i class="fa fa-shopping-cart"></i> Buy Now</a></center>
+                <div class="line"></div>
+                <div class="price">
+                    <span>499<sup>₹</sup></span>
+                </div>
+            </div>
+            <div class="carousel-cell">
+                <h3><b>Canvas Painting</b></h3><br>
+                <h3>Scenery-wall art</h3>
+                <center><img src="canvas1.jpg"></center>
+                <center><a href="basic.html" class="buy"><i class="fa fa-shopping-cart"></i> Buy Now</a></center>
+                <div class="line"></div>
+                <div class="price">
+                    <span>449<sup>₹</sup></span>
+                </div>
+            </div>
+            <div class="carousel-cell">
+                <h3><b>Canvas Painting</b></h3><br>
+                <h3>Scenery-wall art</h3>
+                <center><img src="canvas2.jpg"></center>
+                <center><a href="basic.html" class="buy"><i class="fa fa-shopping-cart"></i> Buy Now</a></center>
+                <div class="line"></div>
+                <div class="price">
+                    <span>499<sup>₹</sup></span>
+                </div>
+            </div>
+            <div class="carousel-cell">
+                <h3><b>Abstract Painting</b></h3><br>
+                <h3>Shiva-wall art</h3>
+                <center><img src="abstract4.jpg"></center>
+                <center><a href="basic.html" class="buy"><i class="fa fa-shopping-cart"></i> Buy Now</a></center>
+                <div class="line"></div>
+                <div class="price">
+                    <span>599<sup>₹</sup></span>
+                </div>
+            </div>
+            <div class="carousel-cell">
+                <h3><b>Abstract Painting</b></h3><br>
+                <h3>wall art</h3>
+                <center><img src="abstract1.jpg"></center>
+                <center><a href="basic.html" class="buy"><i class="fa fa-shopping-cart"></i> Buy Now</a></center>
+                <div class="line"></div>
+                <div class="price">
+                    <span>599<sup>₹</sup></span>
+                </div>
+            </div>
+
+            <div class="carousel-cell">
+                <h3><b>Abstract Painting</b></h3><br>
+                <h3>Ganesha-wall art</h3>
+                <center><img src="abstract2.jpg"></center>
+                <center><a href="basic.html" class="buy"><i class="fa fa-shopping-cart"></i> Buy Now</a></center>
+                <div class="line"></div>
+                <div class="price">
+                    <span>599<sup>₹</sup></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <center><a href="artmall.html" class="more">Click To Enter Art Mall</a></center>
+    <script src="https://unpkg.com/flickity@2.0.11/dist/flickity.pkgd.min.js">
+    </script>
+    <div>
+        <h1 class="h1"><img src="left.png" width="50px" height="20px"> Blogs <img src="right.png" width="50px" height="20px">
+        </h1>
+    </div>
+    <div class="blog">
+        <img src="111.png" width="250px" height="150px">
+        <h2>The Painting That Shocked the World</h2>
+        <p class="innerhead">Can art change the world?</p>
+        <p>People often talk about the ‘power of art’ and by that they often mean power as a subjective experience, the power of art.......</p>
+        <a href="basic.html">
+            <p><button>Read More</button></p>
+        </a>
+    </div>
+    <div class="blog">
+        <img src="222.png" width="250px" height="175px">
+        <h2>Line Art: The Power of Simplicity</h2>
+        <p class="innerhead">Figurative Line Art</p>
+        <p>Line art is one of the oldest art types out there, with first line art cave drawings dating 73,000 years backs. Needless ........</p>
+        <a href="basic.html">
+            <p><button>Read More</button></p>
+        </a>
+    </div>
+    <div class="blog">
+        <img src="333.png" width="250px" height="150px">
+        <h2>Types of Line Art</h2>
+        <p class="innerhead">Line Drawings</p>
+        <p>Line drawings are the most common form of line art out there. By using a pen, a pencil, a marker, or a brush, artists can depict anything from still life, portraits, to landscapes and people, reminding them of .......</p>
+        <a href="basic.html">
+            <p><button>Read More</button></p>
+        </a>
+    </div>
+    <div class="blog">
+        <img src="beginnersguide_1.gif" width="250px" height="150px">
+        <h2>A quick beginner’s guide to drawing</h2>
+        <p class="innerhead">Drawing exercises to get you started now!(They are also terrific ways to relax your mind.)</p>
+        <p>The basic craft of drawing ........</p>
+        <a href="basic.html">
+            <p><button>Read More</button></p>
+        </a>
+    </div>
+
+    <div>
+        <h1 class="h1"><img src="left.png" width="50px" height="20px"> Reviews <img src="right.png" width="50px" height="20px">
+        </h1>
+    </div>
+    <div class="review">
+        <div class="review-inner">
+            <div class="review-front">
+                <img src="person_5.jpg" alt="Avatar" style="width:250px;height:300px;">
+            </div>
+            <div class="review-back1">
+                <br><br><br><br>
+                <h1>Minakshi Sob</h1>
+                <p>Art student</p><br><br>
+                <p>I enjoyed every day of my classes,amazing teaching style.. learnt alot.. </p>
+            </div>
+
+        </div>
+    </div>
+    <div class="review">
+        <div class="review-inner">
+            <div class="review-front">
+                <img src="person_7.jpg" alt="Avatar" style="width:250px;height:300px;">
+            </div>
+            <div class="review-back2">
+                <br><br><br><br>
+                <h1>Zaher</h1>
+                <p>Artist</p><br><br>
+                <p>Art of peace.. </p>
+            </div>
+
+        </div>
+    </div>
+    <div class="review">
+        <div class="review-inner">
+            <div class="review-front">
+                <img src="person_6.jpg" alt="Avatar" style="width:250px;height:300px;">
+            </div>
+            <div class="review-back3">
+                <br><br><br><br>
+                <h1>Naina
+                </h1>
+                <p>Art lover</p><br><br>
+                <p>Nice colletion of art pieces.. only place where uh can free download,buy ,learn ,gaze... </p>
+            </div>
+
+        </div>
+    </div>
+    <div class="review">
+        <div class="review-inner">
+            <div class="review-front">
+                <img src="person_8.jpg" alt="Avatar" style="width:250px;height:300px;">
+            </div>
+            <div class="review-back4">
+                <br><br><br><br>
+                <h1>Dhruv Rana</h1>
+                <p>Art student</p><br><br>
+                <p>I learnt alot from here.. </p>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div id="mySidenav" class="sidenav">
+        <a href="tel:+91 9725367627" id="contact"><i class="fa fa-phone fa-2x"> -click to call</i></a>
+    </div>
+    <footer>
+        <p>
+
+            Copyright &copy;
+            <script>
+                document.write(new Date().getFullYear());
+            </script> All rights reserved by Artstroxx</p>
+    </footer>
+</body>
+
+</html>
